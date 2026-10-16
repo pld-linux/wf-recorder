@@ -1,7 +1,7 @@
 Summary:	Screen recording of wlroots-based compositors
 Name:		wf-recorder
 Version:	0.6.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Applications
 Source0:	https://github.com/ammen99/wf-recorder/archive/v%{version}/%{name}-%{version}.tar.gz
