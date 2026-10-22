@@ -1,11 +1,12 @@
 Summary:	Screen recording of wlroots-based compositors
 Name:		wf-recorder
 Version:	0.6.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Applications
 Source0:	https://github.com/ammen99/wf-recorder/archive/v%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	23b7dc5037486ab6d2675d9ef338faf3
+Patch0:		ffmpeg9.patch
 URL:		https://github.com/ammen99/wf-recorder
 BuildRequires:	Mesa-libgbm-devel
 BuildRequires:	ffmpeg-devel
@@ -29,6 +30,7 @@ and xdg-output).
 
 %prep
 %setup -q
+%patch -P0 -p1
 
 %build
 %meson
